@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import heroImage from '@/public/FB_IMG_1788960290436.jpg';
 
 export default function HomePage() {
   return (
@@ -8,7 +9,7 @@ export default function HomePage() {
       
       <div className="relative w-full max-w-4xl aspect-[16/9] mb-8 rounded-xl overflow-hidden shadow-2xl border border-primary/20">
         <Image 
-          src="/FB_IMG_1788960290436.jpg" 
+          src={heroImage} 
           alt="E-learning App Mockup" 
           fill 
           className="object-cover"
