@@ -5,80 +5,82 @@
 :root {
   --background: 140 20% 99%;
   --foreground: 140 10% 10%;
-  --muted: 140 10% 94%;
-  --muted-foreground: 140 10% 40%;
-  --popover: 140 20% 99%;
-  --popover-foreground: 140 10% 10%;
-  --card: 140 20% 99%;
-  --card-foreground: 140 10% 10%;
-  --primary: 150 100% 35%; /* vibrant green */
-  --primary-foreground: 0 0% 100%;
-  --secondary: 140 10% 92%;
-  --secondary-foreground: 140 10% 10%;
-  --accent: 140 10% 90%;
-  --accent-foreground: 140 10% 10%;
+  --background: 0 0% 100%;
+  --foreground: 0 0% 4%; /* #0a0a0a */
+  --muted: 0 0% 95%; /* #f1f1f1 */
+  --muted-foreground: 0 0% 45%; /* #737373 */
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 4%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 4%;
+  --primary: 0 0% 4%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 95%;
+  --secondary-foreground: 0 0% 4%;
+  --accent: 0 0% 95%;
+  --accent-foreground: 0 0% 4%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --border: 140 10% 88%;
-  --input: 140 10% 88%;
-  --ring: 150 100% 35%;
-  --radius: 0.5rem;
+  --border: 0 0% 80%; /* #cccccc */
+  --input: 0 0% 80%;
+  --ring: 0 0% 4%;
+  --radius: 12px;
   
-  --color-fd-primary: hsl(150 100% 35%);
+  --color-fd-primary: hsl(0 0% 4%);
   --color-fd-primary-foreground: hsl(0 0% 100%);
-  --color-fd-background: hsl(140 20% 99%);
-  --color-fd-foreground: hsl(140 10% 10%);
-  --color-fd-muted: hsl(140 10% 94%);
-  --color-fd-muted-foreground: hsl(140 10% 40%);
-  --color-fd-popover: hsl(140 20% 99%);
-  --color-fd-popover-foreground: hsl(140 10% 10%);
-  --color-fd-card: hsl(140 20% 99%);
-  --color-fd-card-foreground: hsl(140 10% 10%);
-  --color-fd-border: hsl(140 10% 88%);
-  --color-fd-secondary: hsl(140 10% 92%);
-  --color-fd-secondary-foreground: hsl(140 10% 10%);
-  --color-fd-accent: hsl(140 10% 90%);
-  --color-fd-accent-foreground: hsl(140 10% 10%);
-  --color-fd-ring: hsl(150 100% 35%);
+  --color-fd-background: hsl(0 0% 100%);
+  --color-fd-foreground: hsl(0 0% 4%);
+  --color-fd-muted: hsl(0 0% 95%);
+  --color-fd-muted-foreground: hsl(0 0% 45%);
+  --color-fd-popover: hsl(0 0% 100%);
+  --color-fd-popover-foreground: hsl(0 0% 4%);
+  --color-fd-card: hsl(0 0% 100%);
+  --color-fd-card-foreground: hsl(0 0% 4%);
+  --color-fd-border: hsl(0 0% 80%);
+  --color-fd-secondary: hsl(0 0% 95%);
+  --color-fd-secondary-foreground: hsl(0 0% 4%);
+  --color-fd-accent: hsl(0 0% 95%);
+  --color-fd-accent-foreground: hsl(0 0% 4%);
+  --color-fd-ring: hsl(0 0% 4%);
 }
 
 .dark {
-  --background: 140 15% 4%;
-  --foreground: 140 10% 90%;
-  --muted: 140 15% 12%;
-  --muted-foreground: 140 10% 60%;
-  --popover: 140 15% 5%;
-  --popover-foreground: 140 10% 90%;
-  --card: 140 15% 5%;
-  --card-foreground: 140 10% 90%;
-  --primary: 150 100% 45%; /* neon green */
-  --primary-foreground: 140 15% 5%;
-  --secondary: 140 15% 15%;
-  --secondary-foreground: 140 10% 90%;
-  --accent: 140 15% 16%;
-  --accent-foreground: 140 10% 90%;
+  --background: 0 0% 0%; /* #000000 */
+  --foreground: 0 0% 93%; /* #ededed */
+  --muted: 0 0% 9%; /* #171717 */
+  --muted-foreground: 0 0% 45%; /* #737373 */
+  --popover: 0 0% 0%;
+  --popover-foreground: 0 0% 93%;
+  --card: 0 0% 0%;
+  --card-foreground: 0 0% 93%;
+  --primary: 0 0% 93%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 0 0% 9%;
+  --secondary-foreground: 0 0% 93%;
+  --accent: 0 0% 9%;
+  --accent-foreground: 0 0% 93%;
   --destructive: 0 62% 30%;
   --destructive-foreground: 140 10% 90%;
-  --border: 140 15% 18%;
-  --input: 140 15% 18%;
-  --ring: 150 100% 45%;
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 0 0% 93%;
 
-  --color-fd-primary: hsl(150 100% 45%);
-  --color-fd-primary-foreground: hsl(140 15% 5%);
-  --color-fd-background: hsl(140 15% 4%);
-  --color-fd-foreground: hsl(140 10% 90%);
-  --color-fd-muted: hsl(140 15% 12%);
-  --color-fd-muted-foreground: hsl(140 10% 60%);
-  --color-fd-popover: hsl(140 15% 5%);
-  --color-fd-popover-foreground: hsl(140 10% 90%);
-  --color-fd-card: hsl(140 15% 5%);
-  --color-fd-card-foreground: hsl(140 10% 90%);
-  --color-fd-border: hsl(140 15% 18%);
-  --color-fd-secondary: hsl(140 15% 15%);
-  --color-fd-secondary-foreground: hsl(140 10% 90%);
-  --color-fd-accent: hsl(140 15% 16%);
-  --color-fd-accent-foreground: hsl(140 10% 90%);
-  --color-fd-ring: hsl(150 100% 45%);
+  --color-fd-primary: hsl(0 0% 93%);
+  --color-fd-primary-foreground: hsl(0 0% 9%);
+  --color-fd-background: hsl(0 0% 0%);
+  --color-fd-foreground: hsl(0 0% 93%);
+  --color-fd-muted: hsl(0 0% 9%);
+  --color-fd-muted-foreground: hsl(0 0% 45%);
+  --color-fd-popover: hsl(0 0% 0%);
+  --color-fd-popover-foreground: hsl(0 0% 93%);
+  --color-fd-card: hsl(0 0% 0%);
+  --color-fd-card-foreground: hsl(0 0% 93%);
+  --color-fd-border: hsl(0 0% 20%);
+  --color-fd-secondary: hsl(0 0% 9%);
+  --color-fd-secondary-foreground: hsl(0 0% 93%);
+  --color-fd-accent: hsl(0 0% 9%);
+  --color-fd-accent-foreground: hsl(0 0% 93%);
+  --color-fd-ring: hsl(0 0% 93%);
 }
 
 @theme {
@@ -117,46 +119,51 @@ html > body[data-scroll-locked] {
    ============================================================== */
 
 /* Adjusting the main text body */
+body {
+  font-family: var(--font-geist), sans-serif;
+  font-size: 14px;
+}
+
 .prose {
   max-width: 85ch !important;
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: -0.01em;
 }
 
 .prose p {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 16px;
+  margin-bottom: 16px;
   color: var(--color-foreground);
   opacity: 0.9;
 }
 
 /* Headings */
 .prose h1, .prose h2, .prose h3, .prose h4 {
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.02em;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 24px;
+  margin-bottom: 12px;
   color: var(--color-foreground);
 }
 
 .prose h2 {
-  font-size: 1.75rem;
+  font-size: 18px;
   border-bottom: 1px solid var(--color-border);
-  padding-bottom: 0.5rem;
+  padding-bottom: 8px;
 }
 
 .prose h3 {
-  font-size: 1.4rem;
+  font-size: 16px;
 }
 
 /* Beautiful Blockquotes */
 .prose blockquote {
-  border-left: 4px solid var(--color-primary);
-  background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-left: 4px solid var(--color-border);
+  background-color: var(--color-muted);
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
   font-style: normal;
   color: var(--color-foreground);
 }
