@@ -11,7 +11,7 @@ const withMDX = createMDX({
 const config = {
   reactStrictMode: true,
   output: 'export',
-  basePath: process.env.GITHUB_ACTIONS ? '/implementation-playbook' : '',
+  basePath: process.env.GITHUB_ACTIONS ? '/e-learning-implementation-playbook' : '',
   images: {
     unoptimized: true,
   },
