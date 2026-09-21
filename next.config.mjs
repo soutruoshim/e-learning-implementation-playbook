@@ -1,12 +1,17 @@
 import { createMDX } from 'fumadocs-mdx/next';
+import { remarkMdxMermaid } from 'fumadocs-core/mdx-plugins';
 
-const withMDX = createMDX();
+const withMDX = createMDX({
+  mdxOptions: {
+    remarkPlugins: [remarkMdxMermaid],
+  },
+});
 
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
   output: 'export',
-  basePath: '/e-learning-implementation-playbook',
+  basePath: process.env.GITHUB_ACTIONS ? '/implementation-playbook' : '',
   images: {
     unoptimized: true,
   },

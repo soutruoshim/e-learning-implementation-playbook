@@ -9,8 +9,8 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: 'E-learning Playbook',
-  description: 'Official E-learning documentation and playbook',
+  title: 'Implementation Playbook',
+  description: 'Official Implementation documentation and playbook',
 };
 
 export default function Layout({ children }: LayoutProps<'/'>) {
