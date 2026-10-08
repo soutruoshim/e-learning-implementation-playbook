@@ -1,3 +1,7 @@
+---
+title: "Structured Learning Roadmap"
+---
+
 # Structured Learning Roadmap
 
 ## 1. Level 1 — AI Foundations (Immediate Focus)

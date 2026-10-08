@@ -1,3 +1,7 @@
+---
+title: "Level 1 — AI Foundations"
+---
+
 # Level 1 — AI Foundations
 
 ## Main Objective
@@ -1364,7 +1368,7 @@ Error responses
 
 Use environment variables:
 
-```env
+```text
 AI_API_KEY=...
 ```
 

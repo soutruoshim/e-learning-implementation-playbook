@@ -1,3 +1,7 @@
+---
+title: "Level 6 — Reliability & Optimization"
+---
+
 # Level 6 — Reliability & Optimization
 
 ## Primary Objective

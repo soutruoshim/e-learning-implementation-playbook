@@ -1,3 +1,7 @@
+---
+title: "Strategic Execution Framework"
+---
+
 # Strategic Execution Framework
 
 ## 1. Prioritize Core Principles Over Tooling
