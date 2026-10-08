@@ -34,6 +34,12 @@ export default function HomePage() {
         >
           Implementation Playbook
         </Link>
+        <Link 
+          href="/docs/si-level" 
+          className="px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+        >
+          SI Level Playbook
+        </Link>
       </div>
     </div>
   );
