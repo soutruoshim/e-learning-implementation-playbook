@@ -10,6 +10,8 @@ Please use the sidebar to navigate through the project documents:
 
 - [0. Structured Learning Roadmap](/docs/si-level/0-Structured_Learning_Roadmap)
 - [1. Level 1 - AI Foundations](/docs/si-level/1-Level_1_AI_Foundations_Full_Guide)
+  - [1.1 AI Feedback Triage Step-by-Step](/docs/si-level/1.1-level-ai-feedback-triage-step-by-step)
+  - [1.2 AI Examples: Order Review API Error](/docs/si-level/1.2-level-1-ai-examples-order-review-api-error)
 - [2. Level 2 - Knowledge & Data Integration](/docs/si-level/2-Level_2_Knowledge_Data_Integration)
 - [3. Level 3 - AI Application Engineering](/docs/si-level/3-Level_3_AI_Application_Engineering)
 - [4. Level 4 - Agent Workflow Engineering](/docs/si-level/4-Level_4_Agent_Workflow_Engineering)
