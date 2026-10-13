@@ -1,45 +1,79 @@
-# app
+# Implementation Playbook & Knowledge Base
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+A file-based, metadata-driven technical documentation website and knowledge repository built with **Next.js 16** and **Fumadocs**.
 
-Run development server:
+---
+
+## Getting Started Locally
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-pnpm dev
-# or
-yarn dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Explore
+---
 
-In the project, you can see:
+## Knowledge Base Structure
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `lib/layout.shared.tsx`: Shared options for layouts, optional but preferred to keep.
+The Knowledge Base is organized into four top-level logical groups:
 
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
+- **Projects (`PROJECT`)**: End-to-end project specifications, system architectures, and delivery plans (e.g., Coffee, E-Learning).
+- **Roadmaps (`ROADMAP`)**: Technology roadmaps, deep-dive architectures, and engineering phases (e.g., Kubernetes, AWS Roadmap).
+- **Guides (`GUIDE`)**: Hands-on tutorials, engineering frameworks, and setup instructions (e.g., SI-Level).
+- **Documentation (`DOCUMENTATION`)**: Technical reference manuals, API specifications, and operational runbooks.
 
-### Fumadocs MDX
+---
 
-Collections are defined with the [Macro API](https://fumadocs.dev/docs/mdx/macro) in `lib/source.ts`.
+## How to Add Content (No Code Changes Required)
 
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
+Content is 100% driven by the filesystem in `content/docs/`. Adding or editing documentation requires no React or routing code changes.
 
-## Learn More
+### 1. Adding a New Collection (Project, Roadmap, Guide, or Documentation)
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+1. Create a new folder under `content/docs/<collection-name>/`.
+2. Add a `_meta.json` file inside the folder:
+   ```json
+   {
+     "title": "My Collection Title",
+     "type": "PROJECT",
+     "description": "Short description of the collection",
+     "order": 1
+   }
+   ```
+   *Allowed types are strictly: `PROJECT`, `ROADMAP`, `GUIDE`, `DOCUMENTATION`.*
+3. Add an `index.md` overview and any `.md` / `.mdx` documents.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.dev) - learn about Fumadocs
+### 2. Adding a New Document to an Existing Collection
+
+1. Create a markdown file inside the collection folder (e.g. `content/docs/coffee/16-security.md`).
+2. Add standard frontmatter:
+   ```markdown
+   ---
+   title: "16 — Security Architecture"
+   ---
+
+   # 16 — Security Architecture
+   ```
+3. Commit and push. The document is automatically indexed, formatted, and added to search.
+
+---
+
+## Architecture Reference
+
+For detailed internal architecture, data flow, metadata conventions, and navigation logic, see [docs/KNOWLEDGE_BASE_ARCHITECTURE.md](docs/KNOWLEDGE_BASE_ARCHITECTURE.md).
+
+---
+
+## Available Scripts
+
+| Command | Description |
+| :--- | :--- |
+| `npm run dev` | Starts the Next.js development server with Turbopack. |
+| `npm run types:check` | Generates route types and runs TypeScript type checking (`tsc --noEmit`). |
+| `npm run build` | Compiles MDX pages and builds the static production export for GitHub Pages. |
+| `npm run start` | Runs the production build locally. |
