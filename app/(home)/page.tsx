@@ -21,7 +21,7 @@ export default function HomePage() {
         Welcome to our official Project Playbooks. Dive into our comprehensive documentation covering everything from Project Briefs to the Operations Runbook.
       </p>
       
-      <div className="flex flex-col sm:flex-row gap-6">
+      <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6">
         <Link 
           href="/docs/coffee" 
           className="px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
@@ -39,6 +39,12 @@ export default function HomePage() {
           className="px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
         >
           SI Level Playbook
+        </Link>
+        <Link 
+          href="/docs/kubernetes" 
+          className="px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+        >
+          Kubernetes Playbook
         </Link>
       </div>
     </div>
