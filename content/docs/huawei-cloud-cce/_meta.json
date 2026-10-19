@@ -1,0 +1,6 @@
+{
+  "title": "Huawei Cloud CCE",
+  "type": "GUIDE",
+  "description": "Production setup for Huawei Cloud CCE using Terraform, Helm, Argo CD, SWR, and RDS",
+  "order": 6
+}

@@ -1,0 +1,6 @@
+{
+  "title": "GitLab CI/CD & Kubernetes",
+  "type": "GUIDE",
+  "description": "End-to-end setup guide for GitLab CI/CD, Docker Container Registry, Helm charts, and Kubernetes Agent",
+  "order": 5
+}

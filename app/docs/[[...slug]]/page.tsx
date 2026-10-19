@@ -13,7 +13,7 @@ import type { Metadata } from 'next';
 import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { getPageImageUrl, getPageMarkdownUrl, gitConfig } from '@/lib/shared';
 import { getBreadcrumbs } from '@/lib/knowledge/navigation';
-import { getCollection } from '@/lib/knowledge/loader';
+import { getAllCollections, getCollection } from '@/lib/knowledge/loader';
 import { Breadcrumbs } from '@/components/knowledge/Breadcrumbs';
 import { CollectionOverview } from '@/components/knowledge/CollectionOverview';
 
@@ -98,7 +98,20 @@ export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
 }
 
 export async function generateStaticParams() {
-  return source.generateParams();
+  const params: { slug?: string[] }[] = [...source.generateParams()];
+  const collections = getAllCollections();
+
+  const existing = new Set(
+    params.map((p) => (Array.isArray(p.slug) ? p.slug.join('/') : p.slug ?? ''))
+  );
+
+  for (const collection of collections) {
+    if (!existing.has(collection.slug)) {
+      params.push({ slug: [collection.slug] });
+    }
+  }
+
+  return params;
 }
 
 export async function generateMetadata(

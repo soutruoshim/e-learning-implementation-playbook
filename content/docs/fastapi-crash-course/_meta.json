@@ -1,0 +1,6 @@
+{
+  "title": "FastAPI Crash Course",
+  "type": "GUIDE",
+  "description": "Modern Python API development with FastAPI, HTTP methods, routing, and Pydantic schemas",
+  "order": 4
+}
